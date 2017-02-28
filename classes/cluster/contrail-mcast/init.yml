@@ -1,0 +1,162 @@
+# Address plan covered at:
+# https://docs.google.com/spreadsheets/d/17jhct4awbaoXVKp7_SdCbS-DBlikB6oEMb3gzLI4By8/edit#gid=0
+classes:
+- system.linux.system.single
+- system.openssh.server.team.tcpcloud
+- cluster.contrail-mcast.infra
+- cluster.contrail-mcast.openstack
+- cluster.contrail-mcast.opencontrail
+- cluster.contrail-mcast.stacklight
+- cluster.contrail-mcast.stacklight.client
+parameters:
+  _param:
+    openstack_version: mitaka
+    cluster_domain: vagrant.vm
+    stacklight_environment: ${_param:cluster_domain}
+    reclass_data_revision: master
+    cluster_name: contrail-mcast
+    cluster_public_host: public.vagrant.vm
+    infra_config_hostname: cfg01
+    ##local repositiry for aptly
+    #local_repo_url: ip_address
+    #linux_repo_refresh_db: True
+
+    # infra service addresses
+    infra_config_address: 192.168.200.107
+    infra_config_deploy_address: 192.168.200.107
+
+    infra_compute_address: 10.167.4.240
+    infra_compute_node01_address: 10.167.4.241
+    infra_compute_node02_address: 10.167.4.242
+    infra_compute_node03_address: 10.167.4.243
+    infra_compute_node01_deploy_address: 10.167.5.241
+    infra_compute_node02_deploy_address: 10.167.5.242
+    infra_compute_node03_deploy_address: 10.167.5.243
+    infra_compute_node01_hostname: kvm01
+    infra_compute_node02_hostname: kvm02
+    infra_compute_node03_hostname: kvm03
+
+    # openstack service addresses
+    openstack_proxy_address: 192.168.200.9
+    openstack_proxy_node01_address: 192.168.200.101
+    openstack_proxy_node02_address: 192.168.200.102
+    openstack_control_address: 192.168.200.10
+    openstack_control_node01_address: 192.168.200.101
+    openstack_control_node02_address: 192.168.200.102
+    openstack_control_node03_address: 192.168.200.103
+    openstack_database_address: 192.168.200.11
+    openstack_database_node01_address: 192.168.200.101
+    openstack_database_node02_address: 192.168.200.102
+    openstack_database_node03_address: 192.168.200.103
+    openstack_message_queue_address: 192.168.200.12
+    openstack_message_queue_node01_address: 192.168.200.101
+    openstack_message_queue_node02_address: 192.168.200.102
+    openstack_message_queue_node03_address: 192.168.200.103
+
+    openstack_telemetry_address: 10.167.4.75
+    openstack_telemetry_node01_address: 10.167.4.76
+    openstack_telemetry_node02_address: 10.167.4.77
+    openstack_telemetry_node03_address: 10.167.4.78
+
+    # Billing
+    #openstack_billing_address:
+
+    # OpenContrail Control
+    opencontrail_analytics_address: 192.168.200.13
+    opencontrail_analytics_node01_address: 192.168.200.101
+    opencontrail_analytics_node02_address: 192.168.200.102
+    opencontrail_analytics_node03_address: 192.168.200.103
+    opencontrail_control_address: 192.168.200.14
+    opencontrail_control_node01_address: 192.168.200.101
+    opencontrail_control_node02_address: 192.168.200.102
+    opencontrail_control_node03_address: 192.168.200.103
+    # StackLight monitoring
+    stacklight_monitor_address: 10.167.4.70
+    stacklight_monitor_node01_address: 10.167.4.71
+    stacklight_monitor_node02_address: 10.167.4.72
+    stacklight_monitor_node03_address: 10.167.4.73
+    stacklight_log_address: 10.167.4.60
+    stacklight_log_node01_address: 10.167.4.61
+    stacklight_log_node02_address: 10.167.4.62
+    stacklight_log_node03_address: 10.167.4.63
+    stacklight_telemetry_address: 10.167.4.85
+    stacklight_telemetry_node01_address: 10.167.4.86
+    stacklight_telemetry_node02_address: 10.167.4.87
+    stacklight_telemetry_node03_address: 10.167.4.88
+    # openstack compute
+    openstack_compute_node01_single_address: 192.168.210.105
+    openstack_compute_node02_single_address: 192.168.210.106
+    openstack_compute_node03_single_address: 192.168.210.107
+    openstack_compute_node01_control_address: 192.168.200.105
+    openstack_compute_node02_control_address: 192.168.200.106
+    openstack_compute_node03_control_address: 192.168.200.107
+
+    # openstack service hostnames
+    openstack_proxy_hostname: ctl
+    openstack_proxy_node01_hostname: ctl01
+    openstack_proxy_node02_hostname: ctl02
+    openstack_control_hostname: ctl
+    openstack_control_node01_hostname: ctl01
+    openstack_control_node02_hostname: ctl02
+    openstack_control_node03_hostname: ctl03
+    openstack_database_hostname: ctl
+    openstack_database_node01_hostname: ctl01
+    openstack_database_node02_hostname: ctl02
+    openstack_database_node03_hostname: ctl03
+    openstack_message_queue_hostname: ctl
+    openstack_message_queue_node01_hostname: ctl01
+    openstack_message_queue_node02_hostname: ctl02
+    openstack_message_queue_node03_hostname: ctl03
+
+    # opencontrail service hostnames
+    opencontrail_analytics_hostname: ctl
+    opencontrail_analytics_node01_hostname: ctl01
+    opencontrail_analytics_node02_hostname: ctl02
+    opencontrail_analytics_node03_hostname: ctl03
+    opencontrail_control_hostname: ctl
+    opencontrail_control_node01_hostname: ctl01
+    opencontrail_control_node02_hostname: ctl02
+    opencontrail_control_node03_hostname: ctl03
+    # stacklight service hostnames
+    stacklight_monitor_hostname: mon
+    stacklight_monitor_node01_hostname: mon01
+    stacklight_monitor_node02_hostname: mon02
+    stacklight_monitor_node03_hostname: mon03
+    stacklight_log_hostname: log
+    stacklight_log_node01_hostname: log01
+    stacklight_log_node02_hostname: log02
+    stacklight_log_node03_hostname: log03
+    stacklight_telemetry_hostname: mtr
+    stacklight_telemetry_node01_hostname: mtr01
+    stacklight_telemetry_node02_hostname: mtr02
+    stacklight_telemetry_node03_hostname: mtr03
+    # openstack compute
+    openstack_compute_node01_hostname: cpt01
+    openstack_compute_node02_hostname: cpt02
+    openstack_compute_node03_hostname: cpt03
+
+    ##CI/CD
+    #infra_integration_node01_single_address:
+    #infra_version_control_node01_single_address:
+    #infra_storage_node01_single_address:
+    #infra_benchmark_node01_single_address:
+
+    ##FIXME if ntp defined
+    #ntp_strata_host1:
+    #ntp_strata_host2:
+
+    # Interface definitions
+    linux_dhcp_interface:
+      enabled: true
+      type: eth
+      proto: dhcp
+    linux_single_interface:
+      enabled: true
+      type: eth
+      proto: static
+      address: ${_param:single_address}
+      netmask: 255.255.255.0
+      gateway: 192.168.200.1
+      name_servers:
+        - 8.8.8.8
+        - 8.8.4.4

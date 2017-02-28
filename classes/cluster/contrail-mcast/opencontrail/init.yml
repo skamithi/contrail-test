@@ -1,0 +1,52 @@
+
+parameters:
+  _param:
+    opencontrail_version: 3.0
+    opencontrail_stats_password: V7SzKG04uUfp9eOC
+    opencontrail_compute_dns: 8.8.8.8
+    opencontrail_compute_gateway: 192.168.210.1
+    opencontrail_compute_iface: eth2
+    opencontrail_compute_iface_mask: 24
+  linux:
+    network:
+      host:
+        ntw:
+          address: ${_param:opencontrail_control_address}
+          names:
+          - ${_param:opencontrail_control_hostname}
+          - ${_param:opencontrail_control_hostname}.${_param:cluster_domain}
+        ntw01:
+          address: ${_param:opencontrail_control_node01_address}
+          names:
+          - ${_param:opencontrail_control_node01_hostname}
+          - ${_param:opencontrail_control_node01_hostname}.${_param:cluster_domain}
+        ntw02:
+          address: ${_param:opencontrail_control_node02_address}
+          names:
+          - ${_param:opencontrail_control_node02_hostname}
+          - ${_param:opencontrail_control_node02_hostname}.${_param:cluster_domain}
+        ntw03:
+          address: ${_param:opencontrail_control_node03_address}
+          names:
+          - ${_param:opencontrail_control_node03_hostname}
+          - ${_param:opencontrail_control_node03_hostname}.${_param:cluster_domain}
+        nal:
+          address: ${_param:opencontrail_analytics_address}
+          names:
+          - ${_param:opencontrail_analytics_hostname}
+          - ${_param:opencontrail_analytics_hostname}.${_param:cluster_domain}
+        nal01:
+          address: ${_param:opencontrail_analytics_node01_address}
+          names:
+          - ${_param:opencontrail_analytics_node01_hostname}
+          - ${_param:opencontrail_analytics_node01_hostname}.${_param:cluster_domain}
+        nal02:
+          address: ${_param:opencontrail_analytics_node02_address}
+          names:
+          - ${_param:opencontrail_analytics_node02_hostname}
+          - ${_param:opencontrail_analytics_node02_hostname}.${_param:cluster_domain}
+        nal03:
+          address: ${_param:opencontrail_analytics_node03_address}
+          names:
+          - ${_param:opencontrail_analytics_node03_hostname}
+          - ${_param:opencontrail_analytics_node03_hostname}.${_param:cluster_domain}
