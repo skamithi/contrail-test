@@ -2,7 +2,7 @@
 parameters:
   _param:
     opencontrail_version: 3.0
-    opencontrail_stats_password: V7SzKG04uUfp9eOC
+    opencontrail_stats_password: 53SNqJISb1pOM87u
     opencontrail_compute_dns: 8.8.8.8
     opencontrail_compute_gateway: 192.168.210.1
     opencontrail_compute_iface: eth2

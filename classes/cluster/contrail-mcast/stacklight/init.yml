@@ -10,19 +10,19 @@ parameters:
     cluster_elasticsearch_port: 9200
     cluster_kibana_port: 5601
     cluster_grafana_port: 3000
-    mysql_grafana_password: Ai99lKBODAiImJHY
+    mysql_grafana_password: Ncu7vjvj8kDz049d
     grafana_influxdb_host: ${_param:stacklight_telemetry_address}
     elasticsearch_port: 9200
-    influxdb_stacklight_password: IyAmrPIN2EP0TQ3F
-    influxdb_admin_password: J1uoniGAKgVsTDD4
+    influxdb_stacklight_password: gct1TNquWf6hhdmF
+    influxdb_admin_password: Zl3VzVQZEZKCVbGK
     influxdb_port: 8086
     influxdb_database: lma
     influxdb_user: lma
-    influxdb_password: VbmEdlhig4heLeBf
+    influxdb_password: agzXMfE5DNz0URUS
     nagios_host: ${_param:stacklight_monitor_address}
     nagios_status_port: 8001
     nagios_username: nagiosadmin
-    nagios_password: WdrYfF76R7BjAVX7
+    nagios_password: 2p8ZuePpdMltEw1v
     nagios_notification_smtp_server: 127.0.0.1
     nagios_notification_from: 'nagios@localhost'
     nagios_notification_email: 'root@localhost'
