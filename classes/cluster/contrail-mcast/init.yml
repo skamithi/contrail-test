@@ -37,13 +37,13 @@ parameters:
     infra_compute_node03_hostname: kvm03
 
     # openstack service addresses
-    openstack_proxy_address: 192.168.200.9
-    openstack_proxy_node01_address: 192.168.200.101
-    openstack_proxy_node02_address: 192.168.200.102
-    openstack_control_address: 192.168.200.10
-    openstack_control_node01_address: 192.168.200.101
-    openstack_control_node02_address: 192.168.200.102
-    openstack_control_node03_address: 192.168.200.103
+    openstack_proxy_address: 10.167.4.80
+    openstack_proxy_node01_address: 10.167.4.81
+    openstack_proxy_node02_address: 10.167.4.82
+    openstack_control_address: 10.167.4.10
+    openstack_control_node01_address: 10.167.4.11
+    openstack_control_node02_address: 10.167.4.12
+    openstack_control_node03_address: 10.167.4.13
     openstack_database_address: 192.168.200.11
     openstack_database_node01_address: 192.168.200.101
     openstack_database_node02_address: 192.168.200.102
@@ -92,9 +92,9 @@ parameters:
     openstack_compute_node03_control_address: 192.168.200.107
 
     # openstack service hostnames
-    openstack_proxy_hostname: ctl
-    openstack_proxy_node01_hostname: ctl01
-    openstack_proxy_node02_hostname: ctl02
+    openstack_proxy_hostname: prx
+    openstack_proxy_node01_hostname: prx01
+    openstack_proxy_node02_hostname: prx02
     openstack_control_hostname: ctl
     openstack_control_node01_hostname: ctl01
     openstack_control_node02_hostname: ctl02

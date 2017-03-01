@@ -12,7 +12,7 @@ classes:
 parameters:
   _param:
     keepalived_stacklight_telemetry_vip_address: ${_param:stacklight_telemetry_address}
-    keepalived_stacklight_telemetry_vip_password: rpLybXDU6I0e3i4D
+    keepalived_stacklight_telemetry_vip_password: wSH1h1Sfg74ycmBn
     keepalived_stacklight_telemetry_vip_interface: ens4
     cluster_vip_address: ${_param:stacklight_telemetry_address}
     cluster_local_address: ${_param:single_address}

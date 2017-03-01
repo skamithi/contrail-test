@@ -4,63 +4,63 @@ parameters:
     openstack_region: RegionOne
     admin_email: root@localhost
     galera_server_cluster_name: openstack_cluster
-    galera_server_maintenance_password: BDgOE9dnhYqWihkM
-    galera_server_admin_password: C5whdQQWgi7re6MJ
-    rabbitmq_secret_key: ZVZ8CtHwfFORyP82
-    rabbitmq_admin_password: hzaIzhXNrFyyREuK
-    rabbitmq_openstack_password: AZ3UkUtH6WddAA4Q
+    galera_server_maintenance_password: SCh3d3MqL4nlho2x
+    galera_server_admin_password: kHUWc1Fxg16wa8HB
+    rabbitmq_secret_key: iWT5eD41PcEP10VI
+    rabbitmq_admin_password: 4JIzdkGcRdymRkMk
+    rabbitmq_openstack_password: jzsQKPo2uaMivRFa
     glance_version: ${_param:openstack_version}
     glance_service_host: ${_param:openstack_control_address}
     keystone_version: ${_param:openstack_version}
     keystone_service_host: ${_param:openstack_control_address}
     heat_version: ${_param:openstack_version}
     heat_service_host: ${_param:openstack_control_address}
-    heat_domain_admin_password: IOsfNH6uFWWB2g15
+    heat_domain_admin_password: 3pmuDHDGtXpkZtad
     cinder_version: ${_param:openstack_version}
     cinder_service_host: ${_param:openstack_control_address}
     ceilometer_version: ${_param:openstack_version}
     ceilometer_service_host: ${_param:openstack_telemetry_address}
-    ceilometer_influxdb_password: s8crcWGaUAFeq78n
+    ceilometer_influxdb_password: msuG4dgCzLiqgXB7
     nova_version: ${_param:openstack_version}
     nova_service_host: ${_param:openstack_control_address}
     neutron_version: ${_param:openstack_version}
     neutron_service_host: ${_param:opencontrail_control_address}
     glusterfs_service_host: ${_param:infra_compute_address}
     mysql_admin_user: root
-    mysql_admin_password: XV4SEmjgU3cItz0Q
-    mysql_cinder_password: bOivxa5h6EWQnNIF
-    mysql_ceilometer_password: WDUaapIrwha6S8wQ
-    mysql_glance_password: AzGot8rdFI1al4eV
-    mysql_heat_password: r6bhiBxwGzQefG1q
-    mysql_keystone_password: sLf8efZKyRdWx2CM
-    mysql_neutron_password: K5y1LbB1FFS7xTTB
-    mysql_nova_password: sUNGJ8JRHC3oYONM
-    keystone_service_token: iRUNrpSyp6FQBqc9
-    keystone_admin_password: 4b1nfBKEKuU8mgdX
-    keystone_ceilometer_password: D3m6vnL7VGsMn3yX
-    keystone_cinder_password: ywFBFqKlPQZwQSC2
-    keystone_glance_password: Z2Bw0kTDGdIePp7b
-    keystone_heat_password: pp9qkChHEJ088kDP
-    keystone_keystone_password: H3jdQSYWS6WUcenm
-    keystone_neutron_password: HYCbEjGWQIRZdhU7
-    keystone_nova_password: ruQM62uR6vccfWVe
-    ceilometer_secret_key: KAuj7hG0pNubnOqF
+    mysql_admin_password: VjNkS9P6NaKoOhS7
+    mysql_cinder_password: tCdUsth44aoc3i02
+    mysql_ceilometer_password: 2Fd4jY0qQTfSZ6lf
+    mysql_glance_password: zfyZ4FDRKIyOI7m1
+    mysql_heat_password: P8ofvlQVhofGlCY5
+    mysql_keystone_password: Ok7ZnMzwybIimjos
+    mysql_neutron_password: 7akFaZX4FsXUizNt
+    mysql_nova_password: 9ovHQYkj8Srif6WD
+    keystone_service_token: 8MJf5dz2rl7Nv1Nr
+    keystone_admin_password: 0yUvcOTZqFidddX2
+    keystone_ceilometer_password: eZeK161lyE6Wzn51
+    keystone_cinder_password: X0yE9kK1FeoY2eG8
+    keystone_glance_password: hJ5noDSudYNwPRGr
+    keystone_heat_password: 6KWPBJtDDNqQJ80Q
+    keystone_keystone_password: NECsUec1XRLwuih9
+    keystone_neutron_password: mzHZ4FI4FovPG9xJ
+    keystone_nova_password: DP9lV4AC5ClZu1lr
+    ceilometer_secret_key: cQYuMeKKXHIhZ7eU
     horizon_version: ${_param:openstack_version}
-    horizon_secret_key: EZFWeXXYyMzWMEtOzlq5HwkHguMk6PdxxjPKhI8G1mp6EpCxiaKvhNDZ1ScGyBs6
+    horizon_secret_key: Os7OrPTk77ZTJkaZclPJLJExVs9HxpR3D5ygNUgWUn9B3MXNimphWpV8UntVdLgb
     horizon_identity_host: ${_param:openstack_control_address}
     horizon_identity_encryption: none
     horizon_identity_version: 3
     mongodb_server_replica_set: ceilometer
-    mongodb_ceilometer_password: 8g42EgbL01rwoajv
-    mongodb_admin_password: gTzcrWexoMl7XXoR
-    mongodb_shared_key: iYJbpT8q6YJ0gPJ00cTfCOaZBylU1NGs3E1Np4ZthDSq22HOfHMneO2wWJQZPyi2
-    metadata_password: BLWHleZTqgEXwabt
+    mongodb_ceilometer_password: FXdaMRcgrl7aQiy5
+    mongodb_admin_password: G3JaRHgUIr9GweVH
+    mongodb_shared_key: cMOCVpSZqewwvcWkJSsQVloBSFCeQvZowDCPVzWH4qADsIUlr9QjyijLHswxkTwd
+    metadata_password: v52z81Y9QwXwGHgn
     # Billing
-    #keystone_billometer_password: ZV1MHpqiwcyaRzFT
+    #keystone_billometer_password: FHIxf3UFlirGtiq6
     #keystone_billometer_address: ${_param:billometer_service_host}
     #billometer_service_host: ${_param:openstack_billing_address}
     #billometer_version: ${_param:openstack_version}
-    #billometer_secret_key: uGtLU4ilNHUc8sfUterZByHNDQhmgGOMRLuRl0ginEvUkZMZdG92hkyjTe8jNHoq
+    #billometer_secret_key: QFluD0rcyIIhoPCNnxqpAbm3Y0ILxdx27bYgMkztcE83WL6A9LUO0ITu8DPlOWme
     #billometer_identity_password: ${_param:keystone_billometer_password}
     #billometer_identity_host: ${_param:openstack_control_address}
     #billometer_identity_token: ${_param:keystone_service_token}
